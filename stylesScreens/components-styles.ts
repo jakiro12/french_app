@@ -25,8 +25,11 @@ const ComponentStyles : InitScreen = StyleSheet.create({
         bottom:10,
         width:50,
         height:50,
-        backgroundColor:'#ff0000',
-        borderRadius:25
+        backgroundColor:'#ea3c27',
+        borderRadius:25,
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center'
     }
 })
 

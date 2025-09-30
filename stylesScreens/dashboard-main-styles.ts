@@ -31,7 +31,7 @@ const DashboardMainStyles : InitScreen = StyleSheet.create({
         justifyContent:'flex-end',
         alignItems:'center',
         flexDirection:'column',
-        rowGap:20,
+        rowGap:5,
         backgroundColor:'#e0e3e9'
     },
     headerCitiesContainer:{
@@ -57,17 +57,16 @@ const DashboardMainStyles : InitScreen = StyleSheet.create({
     },
     options:{
         position:'absolute',
-        width:150,
+        width:120,
         top:30,
         backgroundColor:'#ffffff',
         right:65,
-        height:'auto',
-        rowGap:10,
-        zIndex:2,
+        height:'auto',        
+        zIndex:2,        
     },
     headerDisplayOptions:{
         width:'90%',
-        height:'auto',
+        height:'50%',
         display:'flex',
         justifyContent:'flex-start',
         alignItems:'center',
@@ -90,7 +89,8 @@ const DashboardMainStyles : InitScreen = StyleSheet.create({
         height:120,
         borderRadius:10,
         borderWidth:1,
-        borderColor:'#000000'
+        overflow:'hidden',
+        borderColor:'#c6d3e6'
     },
     scrollCardsContainer:{
         width:'100%',
