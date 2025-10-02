@@ -4,6 +4,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import BottomNavBar from "../components/navbar";
 import styles from '../../stylesScreens/profile-styles'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { router } from "expo-router";
 
 const ProfileDashboard=()=>{
     return(
@@ -20,7 +21,9 @@ const ProfileDashboard=()=>{
                     showsVerticalScrollIndicator={false}
                     contentContainerStyle={{width:'100%',display:'flex',flexDirection:'column',justifyContent:'flex-start',alignItems:'center'}}>
                 <View style={{width:'100%',height:'auto'}}>
-                    <TouchableOpacity style={styles.btnActionToSetInfo}>
+                    <TouchableOpacity 
+                        onPress={()=>router.push('/(profile)/email/email-config')}
+                        style={styles.btnActionToSetInfo}>
                         <Text style={styles.textBtnAction}>My reservation</Text>
                         <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
                     </TouchableOpacity>    
@@ -46,7 +49,7 @@ const ProfileDashboard=()=>{
                     </TouchableOpacity> 
                 </View>
                 <View style={{width:'100%',height:'auto'}}>
-                    <Text style={{fontSize:15,marginBottom:10,marginTop:5}}>ACCOUNT SETTINGS</Text>
+                    <Text style={{fontSize:14,marginBottom:10,marginTop:10,fontWeight:300}}>ACCOUNT SETTINGS</Text>
                     <TouchableOpacity style={styles.btnActionToSetInfo}>
                         <Text style={styles.textBtnAction}>Email</Text>
                         <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
@@ -55,8 +58,35 @@ const ProfileDashboard=()=>{
                         <Text style={styles.textBtnAction}>Password</Text>
                         <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
                     </TouchableOpacity> 
+                    <TouchableOpacity style={styles.btnActionToSetInfo}>
+                        <Text style={styles.textBtnAction}>Address</Text>
+                        <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
+                    </TouchableOpacity> 
+                    <TouchableOpacity style={styles.btnActionToSetInfo}>
+                        <Text style={styles.textBtnAction}>Bank Cards</Text>
+                        <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
+                    </TouchableOpacity> 
+                    <TouchableOpacity style={styles.btnActionToSetInfo}>
+                        <Text style={styles.textBtnAction}>Email Preferences</Text>
+                        <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
+                    </TouchableOpacity> 
                 </View> 
-                               
+                <View style={{width:'100%',height:120,marginTop:30,borderWidth:1,borderColor:'#000000',borderRadius:15,marginBottom:20}}>
+                </View>        
+                <View style={{width:'100%',height:'auto'}}>
+                    <Text style={{fontSize:14,marginBottom:10,marginTop:10,fontWeight:300}}>SUPPORT</Text>
+                    <TouchableOpacity style={styles.btnActionToSetInfo}>
+                        <Text style={styles.textBtnAction}>How To Use</Text>
+                        <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
+                    </TouchableOpacity> 
+                    <TouchableOpacity style={styles.btnActionToSetInfo}>
+                        <Text style={styles.textBtnAction}>About</Text>
+                        <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
+                    </TouchableOpacity> 
+                    <TouchableOpacity style={[styles.btnActionToSetInfo,{marginTop:30,marginBottom:10}]}>
+                        <Text style={[styles.textBtnAction,{color:'#ea3c27'}]}>Log Out</Text>                        
+                    </TouchableOpacity>                     
+                </View>                        
                 </ScrollView>
             </View>
             <BottomNavBar/>

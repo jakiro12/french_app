@@ -19,9 +19,7 @@ const ProfileStyles : InitScreen = StyleSheet.create({
         backgroundColor:'#e0e3e9'
     },
     headerContainer:{
-        width:'90%',
-        borderWidth:1,
-        borderColor:'#000000',
+        width:'90%',        
         height:'10%',
         display:'flex',
         flexDirection:'row',
@@ -36,7 +34,7 @@ const ProfileStyles : InitScreen = StyleSheet.create({
     },
     btnActionToSetInfo:{
         width:'100%',
-        height:35,
+        height:40,
         borderBottomWidth:1,
         borderBottomColor:'#6e8ac6',
         display:'flex',
