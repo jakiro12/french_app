@@ -6,6 +6,13 @@ interface InitScreen{
     mainOptionsContainer:ViewStyle
     btnActionToSetInfo:ViewStyle
     textBtnAction:TextStyle
+    topNavigationBar:ViewStyle
+    btnBackContainer:ViewStyle
+    saveBtnContainer:ViewStyle
+    topNavigationBarTitle:ViewStyle
+    inputContainer:ViewStyle
+    inputBox:TextStyle
+    inputTitle:TextStyle
 }
 
 const ProfileStyles : InitScreen = StyleSheet.create({
@@ -45,6 +52,57 @@ const ProfileStyles : InitScreen = StyleSheet.create({
     textBtnAction:{
         fontSize:16,
         fontWeight:'bold'
+    },
+    topNavigationBar:{
+        width:'100%',
+        height:50,
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',       
+        paddingInline:5
+    },
+    btnBackContainer:{
+        width:'18%',
+        height:'100%',
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+    },
+    saveBtnContainer:{
+        width:'18%',
+        height:'100%',
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'flex-end',
+        alignItems:'center',
+    },
+    topNavigationBarTitle:{
+        width:'50%',
+        height:'100%',
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'center',
+        alignItems:'center',  
+    },
+    inputContainer:{
+        width:'100%',
+        height:40,
+        borderWidth:1,
+        borderColor:'#000000',
+        borderRadius:10
+    },
+    inputBox:{
+        width:'100%',
+        height:'100%'
+    },
+    inputTitle:{
+        position:'absolute',
+        top:-12,
+        left:6,
+        backgroundColor:'#e0e3e9',
+        paddingInline:4
     }
 })
 

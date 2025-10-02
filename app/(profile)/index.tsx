@@ -21,8 +21,7 @@ const ProfileDashboard=()=>{
                     showsVerticalScrollIndicator={false}
                     contentContainerStyle={{width:'100%',display:'flex',flexDirection:'column',justifyContent:'flex-start',alignItems:'center'}}>
                 <View style={{width:'100%',height:'auto'}}>
-                    <TouchableOpacity 
-                        onPress={()=>router.push('/(profile)/email/email-config')}
+                    <TouchableOpacity                         
                         style={styles.btnActionToSetInfo}>
                         <Text style={styles.textBtnAction}>My reservation</Text>
                         <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
@@ -50,7 +49,9 @@ const ProfileDashboard=()=>{
                 </View>
                 <View style={{width:'100%',height:'auto'}}>
                     <Text style={{fontSize:14,marginBottom:10,marginTop:10,fontWeight:300}}>ACCOUNT SETTINGS</Text>
-                    <TouchableOpacity style={styles.btnActionToSetInfo}>
+                    <TouchableOpacity 
+                    onPress={()=>router.push('/(profile)/email/email-config')}
+                    style={styles.btnActionToSetInfo}>
                         <Text style={styles.textBtnAction}>Email</Text>
                         <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
                     </TouchableOpacity> 
