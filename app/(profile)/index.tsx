@@ -50,12 +50,13 @@ const ProfileDashboard=()=>{
                 <View style={{width:'100%',height:'auto'}}>
                     <Text style={{fontSize:14,marginBottom:10,marginTop:10,fontWeight:300}}>ACCOUNT SETTINGS</Text>
                     <TouchableOpacity 
-                    onPress={()=>router.push('/(profile)/email/email-config')}
                     style={styles.btnActionToSetInfo}>
                         <Text style={styles.textBtnAction}>Email</Text>
                         <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
                     </TouchableOpacity> 
-                    <TouchableOpacity style={styles.btnActionToSetInfo}>
+                    <TouchableOpacity 
+                        onPress={()=>router.push('/(profile)/email/email-config')}
+                        style={styles.btnActionToSetInfo}>
                         <Text style={styles.textBtnAction}>Password</Text>
                         <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
                     </TouchableOpacity> 
@@ -63,7 +64,9 @@ const ProfileDashboard=()=>{
                         <Text style={styles.textBtnAction}>Address</Text>
                         <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
                     </TouchableOpacity> 
-                    <TouchableOpacity style={styles.btnActionToSetInfo}>
+                    <TouchableOpacity 
+                        onPress={()=>router.push('/(profile)/cards/bank-cards')}
+                        style={styles.btnActionToSetInfo}>
                         <Text style={styles.textBtnAction}>Bank Cards</Text>
                         <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
                     </TouchableOpacity> 

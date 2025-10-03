@@ -8,6 +8,8 @@ export default function NavBarLayout() {
     />   
     <Tabs.Screen  name="email/email-settings"
     />   
+    <Tabs.Screen  name="cards/bank-cards"
+    />   
   </Tabs>
   )
 }
