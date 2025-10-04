@@ -13,6 +13,8 @@ interface InitScreen{
     inputContainer:ViewStyle
     inputBox:TextStyle
     inputTitle:TextStyle
+    upcomingCardEvents:ViewStyle
+    btnSetEvent:ViewStyle
 }
 
 const ProfileStyles : InitScreen = StyleSheet.create({
@@ -103,7 +105,23 @@ const ProfileStyles : InitScreen = StyleSheet.create({
         left:6,
         backgroundColor:'#e0e3e9',
         paddingInline:4
-    }
+    },
+    upcomingCardEvents:{
+        width:'100%',
+        height:100,
+        borderWidth:1,
+        borderColor:'#000000',
+        borderRadius:10,
+        padding:5
+    },
+    btnSetEvent:{
+        width:'100%',
+        height:30,        
+        display:'flex',
+        justifyContent:'space-between',
+        alignItems:'center',
+        flexDirection:'row'
+    },
 })
 
 export default ProfileStyles

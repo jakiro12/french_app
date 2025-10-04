@@ -10,6 +10,8 @@ export default function NavBarLayout() {
     />   
     <Tabs.Screen  name="cards/bank-cards"
     />   
+    <Tabs.Screen  name="rsvp/rsvp"
+    />   
   </Tabs>
   )
 }

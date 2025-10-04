@@ -10,6 +10,7 @@ import { Image } from "react-native"
 const DashBoardMainView=()=>{
     const [expanded,setExpanded]=useState<boolean>(false)   
     const [cityOption,setCityOption]=useState<string>(cities[0])
+    const [preffers,setPreffers]=useState<string>('dinner')
     const handleCityOption=(el:string)=>{
         setCityOption(el)
         setExpanded(false)
@@ -57,8 +58,8 @@ const DashBoardMainView=()=>{
                     style={styles.headerDisplayOptions}
                     >
                     <TouchableOpacity 
-                    style={[styles.headerBtnActions]}>
-                       <Text style={{color:'#6e8ac6'}}>Dining</Text>
+                    style={[styles.headerBtnActions,{backgroundColor:preffers === 'dinner' ? '#6e8ac6' : '#c6d3e6'}]}>
+                       <Text style={{color:preffers === 'dinner' ? '#ffffff' :'#6e8ac6'}}>Dining</Text>
                     </TouchableOpacity>
                      <TouchableOpacity style={styles.headerBtnActions}>
                         <Text style={{color:'#6e8ac6'}}>Travel</Text>

@@ -4,6 +4,7 @@ import styles from '../../../stylesScreens/profile-styles'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { router } from "expo-router";
 import BottomNavBar from "@/app/components/navbar";
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 
 const UpcomingEvents=()=>{
@@ -31,9 +32,18 @@ const UpcomingEvents=()=>{
                 </TouchableOpacity>
             </View>
             <View style={{width:'90%',height:'auto',rowGap:20,marginBottom:'auto',marginTop:10}}>
-                <Text>
-                    tarjeta de proximos eventos
-                </Text>
+                <Text style={{fontSize:14,fontWeight:300}}>HISTORY</Text>
+                <TouchableOpacity style={styles.upcomingCardEvents}>
+                    <View style={styles.btnSetEvent}>
+                        <Text style={{fontSize:16,fontWeight:'bold'}}>Sweet</Text>
+                        <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
+                    </View>
+                        <Text>Sun, 3 Nov, 1:00 PM</Text>
+                    <View style={{width:'auto',height:'auto',display:'flex',flexDirection:'row',alignItems:'center'}}>
+                        <FontAwesome6 name="ticket" size={14} color="black" />
+                        <Text>2 persons</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
             <BottomNavBar/>
             </View>

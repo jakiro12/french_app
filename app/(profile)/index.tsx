@@ -26,7 +26,9 @@ const ProfileDashboard=()=>{
                         <Text style={styles.textBtnAction}>My reservation</Text>
                         <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
                     </TouchableOpacity>    
-                    <TouchableOpacity style={styles.btnActionToSetInfo}>
+                    <TouchableOpacity 
+                        onPress={()=>router.push('/(profile)/rsvp/rsvp')}
+                        style={styles.btnActionToSetInfo}>
                         <Text style={styles.textBtnAction}>My RSVPs</Text>
                         <MaterialIcons name="arrow-forward-ios" size={18} color="black" />
                     </TouchableOpacity>    
